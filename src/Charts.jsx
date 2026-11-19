@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import s from './Charts.module.css'
 import { Menu } from './components/menu'
-import { BarChart } from './components/barChart'
+import { BarChart2 } from './components/barChart'
+import { GPie } from './components/pieChart'
+import { GLine } from './components/lineChart'
 
 function Charts() {
-    
+
     const [show, setShow] = useState("")
 
     return (
@@ -17,9 +19,9 @@ function Charts() {
                     <button className={s.btnChart} onClick={() => setShow("linha")}>Gráfico Linha</button>
                 </div>
 
-                {show === "barra" && <BarChart/>}
-                {show === "pizza" && <h1>pizza</h1>}
-                {show === "linha" && <h1>linha</h1>}
+                {show === "barra" && <BarChart2/>}
+                {show === "pizza" && <GPie/>}
+                {show === "linha" && <GLine/>}
             </div>
         </>
     )
