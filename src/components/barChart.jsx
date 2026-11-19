@@ -5,7 +5,7 @@ export const BarChart2 = () => {
 
     return (
         <BarChart
-            style={{ width: '100%', maxWidth: '700px', maxHeight: '70vh', aspectRatio: 1.618 }}
+            style={{ width: '100%', maxWidth: '1200px', maxHeight: '70vh', aspectRatio: 1.618 }}
             responsive
             data={barDados}
             margin={{
