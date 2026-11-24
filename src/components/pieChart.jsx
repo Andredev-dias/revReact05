@@ -4,7 +4,7 @@ import pieDados from '../mock/pieDados.json'
 export const GPie = () => {
     return (
         <PieChart
-            style={{ width: '100%', height: '100%', maxWidth: '500px', maxHeight: '80vh', aspectRatio: 1 }}
+            style={{ width: '100%', height: '100%', maxWidth: '1200px', maxHeight: '80vh', aspectRatio: 1 }}
             responsive
         >
             <Pie

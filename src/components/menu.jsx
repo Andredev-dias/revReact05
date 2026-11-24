@@ -7,7 +7,7 @@ export const Menu = () => {
           <Link to="/">Home</Link>
           <Link to="/charts">Gráficos</Link>
           <Link to="">Produtos</Link>
-          <Link to="">Contato</Link>
+          <Link to="/contact">Contato</Link>
         </nav>
     )
 }
