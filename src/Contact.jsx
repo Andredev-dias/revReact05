@@ -8,7 +8,9 @@ const [nome, setNome] = useState("")
 const [assunto, setAssunto] = useState("")
 
 const enviar = () => {
-
+    const mensagem = `Gostaria de entrar em contato!\n\nNome: ${nome}\nAssunto: ${assunto}`
+    const msg = encodeURIComponent(mensagem)
+    window.open(`https://wa.me/5541999999999?text=${msg}`)
 }
 
     return(
