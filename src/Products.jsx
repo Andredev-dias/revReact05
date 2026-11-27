@@ -1,23 +1,23 @@
+import { Card } from './components/card'
 import { Menu } from './components/menu'
 import s from './Products.module.css'
-import alunoFoto from '/joaopedefeijao.jpg'
+import dados from './mock/produtos.json'
 
-function Products(){
-    return(
+function Products() {
+    return (
         <>
-            <Menu/>
+            <Menu />
             <section className={s.wrapProducts}>
-
-                <div className={s.card}>
-                    <div className={s.wrapImg}>
-                        <img className={s.imagem} src={alunoFoto} alt="Foto exemplo" />
-                    </div>
-                    <div className={s.wrapCardTexts}>
-                        <h2 className={s.cardTitle}>TITULO</h2>
-                        <p className={s.cardText}>BLA BLA BLA BLA BLA</p>
-                    </div>
-                </div>
-                
+                {dados.map((item) => {
+                    return (
+                        <div key={item.id}>
+                            <Card
+                                titulo={item.titulo}
+                                texto={item.texto}
+                                imagem={item.imagem} />
+                        </div>
+                    )
+                })}
             </section>
         </>
     )
